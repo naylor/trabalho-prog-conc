@@ -6,7 +6,7 @@ G=g++
 SRCDIR=src/
 SRCEXT=c
 OBJEXT=o
-PROG=trabalho
+PROG=trabalho-prog-conc
 
 #Flags, Libraries and Includes
 CFLAGS=-Wall -Wextra 

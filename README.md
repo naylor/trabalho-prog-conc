@@ -1,7 +1,13 @@
-trabalho-prog-conc
+﻿trabalho-prog-conc
 ==================
 
 Exemplo de como utilizar o programa.
+
+### Dependências
+1. Necessária instalação da libpthread:
+
+sudo apt-get install build-essential
+sudo apt-get install libpthread-stubs0-dev
 
 ### Instalação
 
@@ -13,12 +19,12 @@ Exemplo de como utilizar o programa.
 3. Rode o comando "make"
 
 
-### Testando a aplicação
+### Executando a aplicação
 
-1. ./trabalho
+1. ./trabalho-prog-conc
 
 2. Os resultados são gravados na pasta: resultados
 
 3. Matrizes disponíveis na pasta: matrizes
    Obs.: Arquivos de matrizes são carregados automaticamente,
-	assim, arquivos podem ser adicionados.
+	assim, mais arquivos podem ser adicionados.
