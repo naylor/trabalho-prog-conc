@@ -1,6 +1,8 @@
 # MAKEFILE #
 
-#The Directories, Source, Includes, Objects, Binary and Resources
+#INFORMANDO O COMPILADOR, 
+#DIRETÓRIOS E O 
+#NOME DO PROGRAMA
 CC=gcc
 G=g++
 SRCDIR=src/
@@ -8,13 +10,15 @@ SRCEXT=c
 OBJEXT=o
 PROG=trabalho-prog-conc
 
-#Flags, Libraries and Includes
+# FLAGS NECESSARIAS
+# PARA COMPILACAO
 CFLAGS=-Wall -Wextra 
 LIB=-lpthread
 
-#---------------------------------------------------------------------------------
-#DO NOT EDIT BELOW THIS LINE
-#---------------------------------------------------------------------------------
+#-------------------------------
+# CARREGA AUTOMATICAMENTE OS
+# ARQUIVOS .C E .H
+#-------------------------------
 SOURCES=$(wildcard $(SRCDIR)*.c)
 HEADERS=$(wildcard $(SRCDIR)*.h)
 
