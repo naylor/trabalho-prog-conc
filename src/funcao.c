@@ -41,6 +41,7 @@ void cleanMemory(matriz* m, timer* t, initialParams* ct) {
 }
 
 // FAZ A DIVISAO DA MATRIZ
+// PARA SER CALCULADA POR PARTES
 void getDivision(matriz* m, initialParams* ct, threadParameters* threadParams) {
 
     int t = 0;
