@@ -13,7 +13,7 @@ PROG=trabalho-prog-conc
 # FLAGS NECESSARIAS
 # PARA COMPILACAO
 CFLAGS=-Wall -Wextra 
-LIB=-lpthread
+LIB=-lpthread 
 
 #-------------------------------
 # CARREGA AUTOMATICAMENTE OS

@@ -19,7 +19,7 @@ int main (){
 
         // VERIFICA SE A MATRIZ
         // FOI ESCOLHIDA CORRETAMENTE
-        if ((ct->typeAlg == 's' || ct->typeAlg == 'p')
+        if ((ct->typeAlg == 's' || ct->typeAlg == 'p' || ct->typeAlg == 'o')
             && (ct->filePath)) {
 
             // CARREGA MATRIZ ESCOLHIDA
@@ -35,7 +35,10 @@ int main (){
                     sequencial(m);
                     break;
                 case 'p':
-                    paralelo(m, ct);
+                    p_pthread(m, ct);
+                    break;
+                case 'o':
+                    p_omp(m, ct);
                     break;
             }
 

@@ -3,8 +3,10 @@
 #include <math.h>
 #include <dirent.h>
 #include <string.h>
+#include <unistd.h>
 #include "main.h"
 #include "funcao.h"
+#include "p_omp.h"
 
 // FUNCAO QUE IMPRIME A SAIDA
 // PARA A TELA, CONFORME MOODLE
@@ -36,6 +38,23 @@ void cleanMemory(matriz* m, timer* t, initialParams* ct) {
         free(ct);
     if(t != NULL)
         free(t);
+}
+
+// FAZ A DIVISAO DA MATRIZ
+void getDivision(matriz* m, initialParams* ct, threadParameters* threadParams) {
+
+    int t = 0;
+	int numDiv = ceil((double) m->J_ORDER / ct->threadsNum);
+	int posIni = 0;
+
+	for (t = 0; t < ct->threadsNum; t++) {
+		threadParams[t].posIni = posIni;
+		threadParams[t].posFim = posIni + (numDiv-1);
+		threadParams[t].m = m;
+		posIni += numDiv;
+		if (t == ((m->J_ORDER % ct->threadsNum) - 1))
+            numDiv--;
+	}
 }
 
 // REALIZA O METODO DE JACOBI
@@ -81,6 +100,7 @@ int checkStop(matriz* m, int k) {
     // X - XANT
     mxAnt = 0;
     mx = 0;
+
 
     for(i = 0; i < m->J_ORDER; i++) {
         total = m->inicial[i] - m->anterior[i];

@@ -33,11 +33,12 @@ initialParams* menu(){
 
     printf("\n");
     printf("\ts - Serial\n");
-    printf("\tp - Paralelo\n\n");
+    printf("\tp - Paralelo - Pthreads\n");
+    printf("\to - Paralelo - OMP\n\n");
     printf("\tEscolha o tipo de execucao: ");
     scanf(" %c", &ct->typeAlg);
     printf("\n");
-    if (ct->typeAlg == 'p') {
+    if (ct->typeAlg == 'p' || ct->typeAlg == 'o') {
         printf("\tEscolha o numero de threads: ");
         scanf(" %d", &ct->threadsNum);
         printf("\n");

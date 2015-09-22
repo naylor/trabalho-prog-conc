@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add option="-lpthread" />
 				</Compiler>
 				<Linker>
 					<Add library="/lib/x86_64-linux-gnu/libpthread-2.21.so" />
@@ -47,10 +48,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="menu.h" />
-		<Unit filename="paralelo.c">
+		<Unit filename="p_omp.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="paralelo.h" />
+		<Unit filename="p_omp.h" />
+		<Unit filename="p_pthread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="p_pthread.h" />
 		<Unit filename="sequencial.c">
 			<Option compilerVar="CC" />
 		</Unit>
