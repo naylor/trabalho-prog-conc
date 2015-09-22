@@ -306,7 +306,7 @@
 	<stdbool.h>
 	"timer.h"
 
-1442942401 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/funcao.c
+1442943111 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/funcao.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
@@ -341,7 +341,7 @@
 
 1442941861 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/p_pthread.h
 
-1442942401 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/p_omp.c
+1442943090 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/p_omp.c
 	<stdio.h>
 	<math.h>
 	<stdlib.h>
