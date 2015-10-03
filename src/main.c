@@ -27,6 +27,12 @@ int main (){
             // CARREGA MATRIZ ESCOLHIDA
             matriz *m = loadMatriz(ct);
 
+            // VERIFICA SE A MATRIZ CONVERGE
+            if(!checkConverge(m)) {
+                printf("\n\t\tMatriz nao converge!\n");
+                break;
+            }
+
             timer* tempo; // RELOGIO
 
             //CARREGA O RELOGIO

@@ -263,7 +263,7 @@
 	<stdbool.h>
 	"timer.h"
 
-1443826983 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/main.c
+1443884082 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/main.c
 	<stdio.h>
 	<stdlib.h>
 	<unistd.h>
@@ -356,10 +356,10 @@
 
 1443821123 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/p_omp.h
 
-1443879993 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/matriz.h
+1443883562 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/matriz.h
 	"menu.h"
 
-1443879953 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/matriz.c
+1443884153 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/matriz.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
