@@ -8,16 +8,17 @@
 #include "p_omp.h"
 #include "p_pthread.h"
 
-int main (){
+int main (int argc, char *argv[]){
     // VERIFICAR SE O USUARIO
     // CONTINUA OU SAI DO PROGRAMA
     char op=NULL;
 
     do {
-        // CARREGA O MENU
+        // CARREGA O MENU OU SETA AS OPCOES
+        // CASO INSERIDAS NA LINHA DE COMANDO
         // RETORNO: ESCOLHA DO ALGORITMO,
         // MATRIZ E QUANTIDADE DE THREADS
-        initialParams* ct = menu();
+        initialParams* ct = menu(argv);
 
         // VERIFICA SE A MATRIZ
         // FOI ESCOLHIDA CORRETAMENTE
@@ -40,12 +41,15 @@ int main (){
 
             switch (ct->typeAlg) {
                 case 's':
+                    printf("Sequencial\n");
                     sequencial(m);
                     break;
                 case 'p':
+                    printf("Pthreads\n");
                     p_pthread(m, ct);
                     break;
                 case 'o':
+                    printf("OpenMP\n");
                     p_omp(m, ct);
                     break;
             }
@@ -61,10 +65,16 @@ int main (){
             cleanMemory(m, tempo, ct);
 
         } else {
-            printf("\nOpcao invalida!\n");
+            printf("\nOpcao invalida!\n\n");
         }
-        printf("\nPressione 's' para voltar ao menu ou 'n' para sair...\n");
-        scanf(" %c", &op);
+
+        if (!argv[1]) {
+            printf("\nPressione 's' para voltar ao menu ou 'n' para sair...\n");
+            scanf(" %c", &op);
+        } else {
+            op = 'n';
+        }
+
     } while (op != 'n');
 
     return 0;

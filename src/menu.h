@@ -7,7 +7,7 @@ typedef struct {
     int threadsNum;
 } initialParams;
 
-initialParams* menu();
+initialParams* menu(char *argv[]);
 
 
 #endif // INTERFACES_H_INCLUDED

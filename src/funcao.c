@@ -7,6 +7,16 @@
 #include "main.h"
 #include "funcao.h"
 
+int in_array(void *array[], int size, void *lookfor)
+{
+    int i;
+
+    for (i = 0; i < size; i++)
+        if (strcmp(lookfor, array[i]) == 0)
+            return 1;
+    return 0;
+}
+
 // FUNCAO QUE IMPRIME A SAIDA
 // PARA A TELA, CONFORME MOODLE
 void sendToScreen(matriz* m, int k) {
