@@ -278,21 +278,23 @@
 
 1441502113 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/menu.h
 
-1443877461 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/funcao.h
+1443880085 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/funcao.h
 	"timer.h"
 	"menu.h"
+	"matriz.h"
 
 1441290340 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/timer.h
 	<time.h>
 	<sys/time.h>
 	<stdbool.h>
 
-1442524782 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/menu.c
+1443880105 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/menu.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"menu.h"
 	"funcao.h"
+	"main.h"
 
 1443820814 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/sequencial.c
 	<stdio.h>
@@ -309,7 +311,7 @@
 	<stdbool.h>
 	"timer.h"
 
-1443877911 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/funcao.c
+1443880067 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/funcao.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
@@ -318,7 +320,6 @@
 	<unistd.h>
 	"main.h"
 	"funcao.h"
-	"p_omp.h"
 
 1441502256 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/paralelo.c
 	<stdio.h>
@@ -354,4 +355,14 @@
 	"p_omp.h"
 
 1443821123 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/p_omp.h
+
+1443879993 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/matriz.h
+	"menu.h"
+
+1443879953 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/naylor/src/matriz.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"matriz.h"
+	"main.h"
 

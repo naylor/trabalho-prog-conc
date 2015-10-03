@@ -3,6 +3,7 @@
 #include <string.h>
 #include "menu.h"
 #include "funcao.h"
+#include "main.h"
 
 // MENU INICIAL
 // AS OPCOES DE MATRIZES SAO CARREGADAS
@@ -13,7 +14,7 @@ initialParams* menu(){
 
     initialParams* ct = (initialParams*)calloc(1,sizeof(initialParams));
 
-    matrizFiles* f = listDir();
+    files* f = listDir(DIRMAT);
 
     printf("\tMetodo de Jacobi-Richardson\n\n");
     printf("\tFabio Alves Martins Pereira (NUSP 7987435)\n");
