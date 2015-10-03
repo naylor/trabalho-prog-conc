@@ -14,5 +14,6 @@ void writeFile(matriz* m, timer* tempo, initialParams* ct);
 files* listDir();
 void sendToScreen(matriz* m, int k);
 const char * getCorrectDir(char *dir);
+int in_array(char *array[], int size, void *lookfor);
 
 #endif // FUNCAO_H_INCLUDED

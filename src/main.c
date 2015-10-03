@@ -9,6 +9,8 @@
 #include "p_pthread.h"
 
 int main (int argc, char *argv[]){
+    argc = argc;
+
     // VERIFICAR SE O USUARIO
     // CONTINUA OU SAI DO PROGRAMA
     char op=NULL;

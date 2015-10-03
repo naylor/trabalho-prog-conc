@@ -7,7 +7,7 @@
 #include "main.h"
 #include "funcao.h"
 
-int in_array(void *array[], int size, void *lookfor)
+int in_array(char *array[], int size, void *lookfor)
 {
     int i;
 
