@@ -5,7 +5,7 @@ echo -e "Iniciando as coletas de dados";
 echo -e "Testando Pthreads, 10 execucoes com varios numeros de threads.";
 for mat in `ls matrizes/`
   do
-  for i in {1,2,3,5,6,7,8,9,10,15,20,50}
+  for i in {2,3,5,6,7,8,9,10,15,20,50}
   do
     for j in $(seq 10);
     do
@@ -19,7 +19,7 @@ done
 echo -e "Testando OpenMP, 10 execucoes com varios numeros de threads.";
 for mat in `ls matrizes/`
   do
-  for i in {1,2,3,5,6,7,8,9,10,15,20,50}
+  for i in {2,3,5,6,7,8,9,10,15,20,50}
   do
     for j in $(seq 10);
     do
