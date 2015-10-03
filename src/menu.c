@@ -48,7 +48,7 @@ initialParams* menu(char *argv[]){
         ct->filePath = (char *) argv[1];
         ct->typeAlg = (char) argv[2][0];
         if (argv[2][0]!='s')
-            ct->threadsNum = (int)argv[3][0];
+            ct->threadsNum = strtol(argv[3], NULL, 10);
 
     } else {
 

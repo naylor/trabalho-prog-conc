@@ -48,10 +48,12 @@ int main (int argc, char *argv[]){
                     break;
                 case 'p':
                     printf("Pthreads\n");
+                    printf("Threads: %d\n", ct->threadsNum);
                     p_pthread(m, ct);
                     break;
                 case 'o':
                     printf("OpenMP\n");
+                    printf("Threads: %d\n", ct->threadsNum);
                     p_omp(m, ct);
                     break;
             }

@@ -9,6 +9,7 @@ for mat in `ls matrizes/`
   do
     for j in $(seq 10);
     do
+	echo $i
        ./trabalho-prog-conc $mat p $i
       sleep 5
     done
