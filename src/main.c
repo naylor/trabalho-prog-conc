@@ -47,13 +47,13 @@ int main (int argc, char *argv[]){
                     sequencial(m);
                     break;
                 case 'p':
-                    printf("Pthreads\n");
-                    printf("Threads: %d\n", ct->threadsNum);
+                    printf("Pthreads: %s\n", ct->filePath);
+                    printf("Numero Threads: %d\n", ct->threadsNum);
                     p_pthread(m, ct);
                     break;
                 case 'o':
-                    printf("OpenMP\n");
-                    printf("Threads: %d\n", ct->threadsNum);
+                    printf("OpenMP: %s\n", ct->filePath);
+                    printf("Numero Threads: %d\n", ct->threadsNum);
                     p_omp(m, ct);
                     break;
             }
