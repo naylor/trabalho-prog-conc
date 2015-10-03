@@ -59,6 +59,8 @@ void getDivision(matriz* m, initialParams* ct, threadParameters* threadParams) {
 }
 
 // REALIZA O METODO DE JACOBI
+// DIVIDINDO A MATRIZ EM COLUNAS
+// DE ACORDO COM A QUANTIDADE DE THREADS
 void getJacobiCalc(matriz* m, int posIni, int posFim) {
 	double total;
 	int i, j;
@@ -214,8 +216,7 @@ void writeFile(matriz* m, timer* tempo, initialParams* ct) {
    	//write to file
 	FILE* f = fopen(filename, "a");
 	if (f == NULL) {
-		puts("Nao foi possivel gravar o arquivo.");
-		puts(filename);
+        printf("\nNao foi possivel gravar o arquivo no diretorio dos resultados: %s\n\n", filename);
 		exit(0);
 	}
 	fprintf(f, "%i\t%i\t%s\t%li\t%.9f\t%.9f\t%i\t%.9f\t\n",
