@@ -12,8 +12,8 @@ PROG=trabalho-prog-conc
 
 # FLAGS NECESSARIAS
 # PARA COMPILACAO
-CFLAGS=-Wall -Wextra 
-LIB=-lpthread 
+CFLAGS=-Wall -Wextra -fopenmp
+LIB=-lpthread -fopenmp 
 
 #-------------------------------
 # CARREGA AUTOMATICAMENTE OS
@@ -29,7 +29,7 @@ $(PROG): $(SOURCES:.c=.o)
 	$(G) -o $@ $^ $(LIB) 
 
 %.o: %.c $(HEADERS)
-	$(CC) -g -c $< -o $@
+	$(CC) -g -c $< -o $@ $(CFLAGS)
 
 clean:
 	rm -f $(SRCDIR)*.o

@@ -4,9 +4,11 @@
 #include "main.h"
 #include "menu.h"
 #include "funcao.h"
+#include "sequencial.h"
+#include "p_omp.h"
+#include "p_pthread.h"
 
 int main (){
-
     // VERIFICAR SE O USUARIO
     // CONTINUA OU SAI DO PROGRAMA
     char op=NULL;

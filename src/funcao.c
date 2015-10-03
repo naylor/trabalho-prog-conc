@@ -145,7 +145,7 @@ matriz* loadMatriz(initialParams* ct) {
     // ABRINDO O ARQUIVO
     FILE *file;
     char path[512];
-    snprintf(path, sizeof(path), "%s%s", DIRMAT, ct->filePath);
+    snprintf(path, sizeof(path), "%s%s", getCorrectDir(DIRMAT), ct->filePath);
 	file = fopen(path, "r");
 
     // CARREGANDO VALORES (VER TAREFA MOODLE)
@@ -206,9 +206,9 @@ void writeFile(matriz* m, timer* tempo, initialParams* ct) {
 	//filename
 	char filename[200];
 	if (ct->typeAlg == 's') {
-		sprintf((char*) &filename, "%s%c_%i.txt", DIRRES, ct->typeAlg, m->J_ORDER);
+		sprintf((char*) &filename, "%s%c_%i.txt", getCorrectDir(DIRRES), ct->typeAlg, m->J_ORDER);
 	} else {
-		sprintf((char*) &filename, "%s%c_%d_%i.txt", DIRRES, ct->typeAlg, m->J_ORDER, ct->threadsNum);
+		sprintf((char*) &filename, "%s%c_%d_%i.txt", getCorrectDir(DIRRES), ct->typeAlg, m->J_ORDER, ct->threadsNum);
 	}
 
    	//write to file
@@ -240,9 +240,9 @@ matrizFiles* listDir() {
     struct dirent **namelist;
     matrizFiles* f = (matrizFiles*)calloc(1,sizeof(matrizFiles));
 
-    n = scandir(DIRMAT, &namelist, 0, alphasort);
+    n = scandir(getCorrectDir(DIRMAT), &namelist, 0, alphasort);
     if (n < 0)
-        perror("scandir");
+        printf("\nNao foi possivel achar o diretorio das matrizes: %s\n\n", getCorrectDir(DIRMAT));
     else {
         while(n--) {
             if ((strcmp(namelist[n]->d_name, ".")!=0)
@@ -257,4 +257,20 @@ matrizFiles* listDir() {
 
     f->total = i;
     return f;
+}
+
+// FUNCAO QUE VERIFICA SE A EXECUCAO
+// E FORA OU DENTRO DO DIRETORIO SRC
+// PROBLEMA NO CODE::BLOCKS
+// A EXECUCAO É DIFERENTE DO TERMINAL
+const char* getCorrectDir(char *dir) {
+
+	static char dirname[200];
+    if (0 != access(dir, F_OK)) {
+		sprintf((char*) dirname, "../%s", dir);
+    } else {
+        sprintf((char*) dirname, "%s", dir);
+    }
+
+    return dirname;
 }
