@@ -21,10 +21,16 @@ sudo apt-get install libpthread-stubs0-dev
 
 ### Executando a aplicação
 
-1. ./trabalho-prog-conc
+1. Utilizando os menus do programa
+   usar: ./trabalho-prog-conc
 
-2. Os resultados são gravados na pasta: resultados
+2. Executando pelo terminal
+   usar: ./trabalho-prog-conc --help
+   ou
+   usar: ./trabalho-prog-conc [MATRIZ]... [ALGORITIMO]... [NUMERO THREADS]...
 
-3. Matrizes disponíveis na pasta: matrizes
+3. Os resultados são gravados na pasta: resultados
+
+4. Matrizes disponíveis na pasta: matrizes
    Obs.: Arquivos de matrizes são carregados automaticamente,
 	assim, mais arquivos podem ser adicionados.
