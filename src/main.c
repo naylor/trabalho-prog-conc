@@ -43,7 +43,7 @@ int main (int argc, char *argv[]){
 
             switch (ct->typeAlg) {
                 case 's':
-                    printf("Sequencial\n");
+                    printf("Sequencial: %s\n", ct->filePath);
                     sequencial(m);
                     break;
                 case 'p':
