@@ -13,10 +13,11 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add option="-lpthread" />
+					<Add option="-fopenmp" />
 				</Compiler>
 				<Linker>
 					<Add library="/lib/x86_64-linux-gnu/libpthread-2.21.so" />
+					<Add library="/usr/lib/gcc/x86_64-linux-gnu/4.9/libgomp.so" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -44,6 +45,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.h" />
+		<Unit filename="matriz.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="matriz.h" />
 		<Unit filename="menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
