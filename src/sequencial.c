@@ -24,7 +24,7 @@ double* sequencial(matriz* m) {
         getJacobiCalc(m, 0, m->J_ORDER-1);
 
         if(k%1000 == 0 ){
-            printf("Mostrando execuacao: %d\n", k);
+            printf("Mostrando execucao: %d\n", k);
         }
 	    k++;
 
